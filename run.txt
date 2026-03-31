@@ -1,0 +1,6 @@
+Start the Backend:
+cd backend
+npm run dev
+Start the Frontend:
+cd frontend
+npm run dev
