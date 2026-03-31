@@ -6,7 +6,8 @@
     "start:backend": "cd backend && npm start",
     "start:frontend": "cd frontend && npm run dev",
     "install:all": "cd backend && npm install && cd ../frontend && npm install",
-    "seed": "cd backend && node utils/seedData.js"
+    "seed": "cd backend && node utils/seedData.js",
+    "build": "cd frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC"
