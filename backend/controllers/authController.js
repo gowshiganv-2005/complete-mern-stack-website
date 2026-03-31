@@ -41,7 +41,8 @@ const register = async (req, res) => {
 
   setCookies(res, accessToken, refreshToken);
 
-  try { await sendWelcomeEmail(user); } catch (e) { console.error('Welcome email failed:', e.message); }
+  // Send welcome email in background (non-blocking for registration response)
+  sendWelcomeEmail(user).catch((e) => console.error('Welcome email failed:', e.message));
 
   res.status(201).json({
     success: true,
