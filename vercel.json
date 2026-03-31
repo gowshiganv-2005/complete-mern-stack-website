@@ -18,12 +18,12 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/$1",
+      "dest": "/$1",
       "continue": true
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/index.html"
+      "dest": "/index.html"
     }
   ]
 }
